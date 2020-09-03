@@ -1,0 +1,43 @@
+.addres{
+    color: #8A82CC;
+}
+
+.list{
+    li{
+        padding-left: 27px;
+    }
+    &-content{
+        padding: 20px 0;
+    }
+    &-shadow{
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        transition: .5s;
+        &:hover,&:focus{
+            box-shadow: 0 1px 3px 2px rgba(0,0,0,0.30);
+        }
+    }
+    &-photo{
+        height:155px ;
+        color: white;
+        h3,span{
+            background:rgba(0,0,0,0.50);
+        }
+    }
+    &-openTime{
+        background: url(../stylesheets/images/icons_clock.png) no-repeat scroll left 50%;
+        margin-bottom: 10px;
+    }
+    &-addres{
+        background: url(../stylesheets/images/icons_pin.png) no-repeat scroll 0.5% 50%;
+        margin-bottom: 10px;
+    }
+    &-tel{
+        background: url(../stylesheets/images/icons_phone.png) no-repeat scroll 1% 50%;
+    }
+    &-bage{
+        background: url(../stylesheets/images/icons_tag.png) no-repeat scroll left 50%;
+        position: absolute;
+        right: 1rem;
+        bottom: 1.25rem;
+    }
+}

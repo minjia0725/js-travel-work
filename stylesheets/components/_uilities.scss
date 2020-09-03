@@ -1,0 +1,43 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin sm {
+    @media (min-width: $sm) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: $md) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: $xl) {
+        @content;
+    }
+}
+
+.title-hidden{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bg-cover{
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.goTop{
+    position: fixed;
+    right: 6%;
+    bottom: 12%;
+}

@@ -1,0 +1,17 @@
+
+
+.divider{
+    height: 1px;
+    border: 1px dashed $secondary ;
+    position: relative;
+    &::before{
+        content: url(../stylesheets/images/icons_down_blue.png);
+        background: white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-13px);//translate(x 軸移動 x 距離，Y 軸移動 y 距離)
+        padding:0 4px;
+        border: 2px solid $secondary;
+        border-radius: 50%;
+    }
+}

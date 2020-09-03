@@ -1,0 +1,21 @@
+.header{
+    background-image: url(../stylesheets/images/header-md.png);
+    width: 1024px;
+    height: 280px;
+    @include md{
+        height: 380px;
+        background-image: url(../stylesheets/images/header-lg.png);
+    }
+    &-changeArea{
+        font-size: 1.125rem;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 9.5px;
+        border: 3px solid #FFFFFF;
+        border-radius: 3px;
+        /*移除箭頭樣式*/
+        appearance:none;
+        background: url("../stylesheets/images/icons_down.png") no-repeat scroll 97% 50%;
+        background-color: rgba(255,255,255,0.70);
+    }
+}
